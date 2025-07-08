@@ -19,10 +19,10 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --background-color: #FAFAFA; /* Background color for the entire website, including individual sections */
   --default-color: #212529; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #2d465e; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #0d83fd; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --heading-color: #09315A; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #09315A; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -45,11 +45,11 @@
 }
 
 .dark-background {
-  --background-color: #0d83fd;
-  --default-color: #ffffff;
+  --background-color: #FAFAFA;
+  --default-color: #FAFAFA;
   --heading-color: #ffffff;
   --surface-color: #409dfd;
-  --contrast-color: #ffffff;
+  --contrast-color: #FAFAFA;
 }
 
 /* Smooth scroll */
@@ -717,11 +717,15 @@ section,
 --------------------------------------------------------------*/
 .hero {
   position: relative;
-  padding-top: 135px;
-  background-image: url("assets/img/RELOJ2/hero3.png");
- background-repeat: no-repeat;
+  padding-top: 389px;
+  background-image: url("assets/img/RELOJ/hero4.png");
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .hero::before {
@@ -736,17 +740,19 @@ section,
 }
 
 .hero .hero-content {
-  position: relative;
   z-index: 1;
+  color: white;
+  
 }
 
 .hero .hero-content h1 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 789;
+  margin-bottom: 1rem;
 }
-
+.hero .hero-content p {
+  font-size: 1.2rem;
+}
 .hero .hero-content h1 .accent-text {
   color: var(--accent-color);
 }
@@ -775,8 +781,8 @@ section,
 .hero .company-badge {
   display: inline-flex;
   align-items: center;
-  padding: 0.5rem 1rem;
-  background-color: color-mix(in srgb, var(--accent-color), transparent 92%);
+  padding: 1.7rem 1rem;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 96%);
   border-radius: 50px;
   color: var(--accent-color);
   font-weight: 500;
@@ -829,7 +835,7 @@ section,
 }
 
 .hero .customers-badge {
-  position: absolute;
+  position: center;
   bottom: 10px;
   right: 30px;
   background-color: var(--surface-color);
@@ -881,7 +887,6 @@ section,
     max-width: 250px;
   }
 }
-
 .hero .stats-row {
   position: relative;
   z-index: 1;
@@ -901,7 +906,7 @@ section,
 
 .hero .stat-item .stat-icon {
   flex-shrink: 0;
-  width: 64px;
+  width: 56px;
   height: 64px;
   display: flex;
   align-items: center;
@@ -1099,14 +1104,14 @@ section,
 
 .about .image-wrapper .experience-badge {
   position: absolute;
-  bottom: 5%;
-  right: 5%;
+  bottom: -18%;
+  right: -17%;
   background-color: var(--accent-color);
   color: var(--contrast-color);
-  padding: 1.5rem;
-  border-radius: 0.5rem;
+  padding: 0.9rem;
+  border-radius: 0.8rem;
   text-align: center;
-  min-width: 200px;
+  min-width: 169px;
   animation: experience-float 3s ease-in-out infinite;
 }
 
@@ -1120,7 +1125,7 @@ section,
 
 .about .image-wrapper .experience-badge h3 {
   color: var(--contrast-color);
-  font-size: 2.5rem;
+  font-size: 1.9rem;
   margin: 0;
   line-height: 0.5;
 }
@@ -1132,8 +1137,8 @@ section,
 }
 
 .about .image-wrapper .experience-badge p {
-  margin: 0.5rem 0 0;
-  font-size: 0.875rem;
+  margin: 0.2rem 0 0;
+  font-size: 0.83rem;
 }
 
 @keyframes experience-float {
@@ -1270,12 +1275,12 @@ section,
 --------------------------------------------------------------*/
 .features-cards {
   --default-color: #555;
-  --heading-color: #333;
+  --heading-color: #09315A;
 }
 
 .features-cards .feature-box {
   height: 100%;
-  padding: 40px 30px;
+  padding: 16px 30px;
   border-radius: 10px;
 }
 
@@ -1299,35 +1304,35 @@ section,
 }
 
 .features-cards .feature-box.orange {
-  background-color: #fff3e2;
+  background-color: #EDEFF1;
 }
 
 .features-cards .feature-box.orange i {
-  color: #edb86e;
+  color: #EDEFF1;
 }
 
 .features-cards .feature-box.blue {
-  background-color: #deedfd;
+  background-color: #EDEFF1;
 }
 
 .features-cards .feature-box.blue i {
-  color: #20a5f8;
+  color: #EDEFF1;
 }
 
 .features-cards .feature-box.green {
-  background-color: #d5f1e4;
+  background-color: #EDEFF1;
 }
 
 .features-cards .feature-box.green i {
-  color: #48c88a;
+  color: #EDEFF1;
 }
 
 .features-cards .feature-box.red {
-  background-color: #fdeded;
+  background-color: #EDEFF1;
 }
 
 .features-cards .feature-box.red i {
-  color: #f28484;
+  color: #EDEFF1;
 }
 
 /*--------------------------------------------------------------
@@ -1339,23 +1344,23 @@ section,
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
+  border-radius: 121%;
   background-color: color-mix(in srgb, var(--accent-color), transparent 92%);
 }
 
 .features-2 .feature-item .feature-icon i {
-  font-size: 24px;
+  font-size: 27px;
   color: var(--accent-color);
 }
 
 .features-2 .feature-item .feature-content h3 {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
 .features-2 .feature-item .feature-content p {
-  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  color: #09315A;
   font-size: 15px;
   margin-bottom: 0;
 }
@@ -1366,7 +1371,7 @@ section,
 }
 
 .features-2 .phone-mockup img {
-  max-width: 300px;
+  max-width: 359px;
   height: auto;
   filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.1));
 }
@@ -1392,8 +1397,8 @@ section,
 # Call To Action Section
 --------------------------------------------------------------*/
 .call-to-action .container {
-  background: var(--accent-color);
-  color: var(--contrast-color);
+ background-image: url("assets/img/RELOJ/3fotos");
+  color: #09315A;
   position: relative;
   overflow: hidden;
   border-radius: 1rem;
@@ -1410,7 +1415,7 @@ section,
 .call-to-action .btn-cta {
   background-color: color-mix(in srgb, var(--contrast-color) 15%, transparent);
   color: var(--contrast-color);
-  padding: 12px 40px;
+  padding: 196px 32px;
   border-radius: 50px;
   transition: all 0.3s ease;
   border: 2px solid var(--contrast-color);
@@ -1430,7 +1435,7 @@ section,
 }
 
 .call-to-action .shape svg {
-  width: 100%;
+  width: 123%;
   height: 100%;
 }
 
@@ -1492,7 +1497,7 @@ section,
 .call-to-action .dots-2 {
   width: 150px;
   height: 150px;
-  bottom: 20px;
+  bottom: 37px;
   right: 15%;
   opacity: 0.15;
   transform: rotate(-10deg);
@@ -2001,7 +2006,7 @@ section,
 # Call To Action 2 Section
 --------------------------------------------------------------*/
 .call-to-action-2 {
-  padding: 80px 0;
+  padding: 20px 0;
 }
 
 .call-to-action-2 .container {
@@ -2010,9 +2015,9 @@ section,
 }
 
 .call-to-action-2 h3 {
-  font-size: 28px;
-  font-weight: 700;
-  color: var(--default-color);
+  font-size: 24px;
+  font-weight: 580;
+  color: #09315A;
 }
 
 .call-to-action-2 p {
@@ -2021,7 +2026,7 @@ section,
 
 .call-to-action-2 .cta-btn {
   font-family: var(--heading-font);
-  font-weight: 500;
+  font-weight: 505;
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
